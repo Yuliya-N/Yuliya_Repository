@@ -1,7 +1,8 @@
 # not palindrom but pangram
-alphabet = 'abcdefghijklmnopqrstuvwxyz'
+from string import ascii_lowercase as az
+
 
 def check(text):
-	return set(text.lower()).issuperset(set(alphabet))
+	return set(text.lower()).issuperset(set(az))
 
 print(check('abc'))
