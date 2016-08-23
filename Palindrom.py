@@ -2,4 +2,6 @@
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
 def check(text):
-	return(text.lower()).issuperset(set(alphabet))
+	return set(text.lower()).issuperset(set(alphabet))
+
+print(check('abc'))
