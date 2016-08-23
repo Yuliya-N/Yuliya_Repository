@@ -1,3 +1,4 @@
+# Copyright 2016
 # not palindrom but pangram
 from string import ascii_lowercase as az
 
