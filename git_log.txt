@@ -298,3 +298,604 @@ index e69de29..bddb527 100644
 \ No newline at end of file
 
 D:\git_train>
+operable program or batch file.
+
+D:\git_train>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is 5454-A852
+
+ Directory of D:\git_train
+
+08/23/2016  08:15 PM    <DIR>          .
+08/23/2016  08:15 PM    <DIR>          ..
+08/20/2016  01:32 PM                 9 data.txt
+08/20/2016  01:05 PM    <DIR>          folder
+08/20/2016  02:05 PM             8,241 git_log.txt
+08/23/2016  08:50 PM               163 Palindrom.py
+               3 File(s)          8,413 bytes
+               3 Dir(s)  24,646,610,944 bytes free
+
+D:\git_train>git log --oneline
+283689d Pangram is improved. git_low is added.
+dd25556 Testing is added. Bug fixed.
+d5ad38b Pangram is created.
+892e2b5 Simple comment
+cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>git checkout dd25556
+Note: checking out 'dd25556'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at dd25556... Testing is added. Bug fixed.
+
+D:\git_train>git checkout master
+Previous HEAD position was dd25556... Testing is added. Bug fixed.
+Switched to branch 'master'
+
+D:\git_train>git branch
+* master
+
+D:\git_train>git branch testing
+
+D:\git_train>git branch
+* master
+  testing
+
+D:\git_train>git checkout testing
+Switched to branch 'testing'
+
+D:\git_train>
+D:\git_train>
+D:\git_train>
+D:\git_train>python Palindrom.py
+True
+True
+
+D:\git_train>git commit -a -m "Added full alpha test."
+[testing 5754c1e] Added full alpha test.
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\git_train>git commit -a -m "Added test on uppercase."
+[testing 3c055e0] Added test on uppercase.
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\git_train>git log --oneline
+3c055e0 Added test on uppercase.
+5754c1e Added full alpha test.
+283689d Pangram is improved. git_low is added.
+dd25556 Testing is added. Bug fixed.
+d5ad38b Pangram is created.
+892e2b5 Simple comment
+cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>python Palindrom.py
+  File "Palindrom.py", line 10
+    print(check'ABCDEFGHIJKLMNOPQRSTUVWXYZ')
+                                          ^
+SyntaxError: invalid syntax
+
+D:\git_train>python Palindrom.py
+  File "Palindrom.py", line 11
+    print(check('Quick brown fox jumps over the lazy dog')
+        ^
+SyntaxError: invalid syntax
+
+D:\git_train>python Palindrom.py
+True
+True
+True
+True
+
+D:\git_train>git commit -a -m "Real pangram."
+[testing 747f320] Real pangram.
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+D:\git_train>git status
+On branch testing
+nothing to commit, working tree clean
+
+D:\git_train>git branch
+  master
+* testing
+
+D:\git_train>git log
+commit 747f320f3acb3509e62c4c36943d796098ee42ba
+Author: Yuliya Nykytenko <yuliya.nykytenko@gmail.com>
+Date:   Tue Aug 23 21:37:23 2016 +0300
+
+    Real pangram.
+
+commit 3c055e0ec090dade28aa7ef4ec6018defd847b9a
+Author: Yuliya Nykytenko <yuliya.nykytenko@gmail.com>
+Date:   Tue Aug 23 21:34:11 2016 +0300
+
+    Added test on uppercase.
+
+commit 5754c1e7e20eba69e93d96f2589fba40911c7100
+Author: Yuliya Nykytenko <yuliya.nykytenko@gmail.com>
+Date:   Tue Aug 23 21:29:26 2016 +0300
+
+    Added full alpha test.
+
+commit 283689d52496dce9eb3d1d2fe32f0235a9c88561
+Author: Yuliya Nykytenko <yuliya.nykytenko@gmail.com>
+Date:   Tue Aug 23 20:51:17 2016 +0300
+
+    Pangram is improved. git_low is added.
+
+commit dd25556c057e2dc026ef57174243ca0d23726abd
+Author: Yuliya Nykytenko <yuliya.nykytenko@gmail.com>
+Date:   Tue Aug 23 20:47:29 2016 +0300
+
+    Testing is added. Bug fixed.
+
+commit d5ad38be34ada22acd65e53cc1045e9af1e467cc
+Author: Yuliya Nykytenko <yuliya.nykytenko@gmail.com>
+Date:   Tue Aug 23 20:34:54 2016 +0300
+
+    Pangram is created.
+
+commit 892e2b5fdf4cd65b8ad39e412e53acf9d1fbaac2
+Author: Yuliya Nykytenko <yuliya.nykytenko@gmail.com>
+Date:   Sat Aug 20 13:43:44 2016 +0300
+
+    Simple comment
+
+commit cb3b9e2df9d8e407af69464475f37bfc5fb88ca3
+Author: Yuliya Nykytenko <yuliya.nykytenko@gmail.com>
+Date:   Sat Aug 20 13:13:03 2016 +0300
+
+    First test commit with file anf folder with file
+
+D:\git_train>git checkout master
+Switched to branch 'master'
+
+D:\git_train>git log --oneline
+283689d Pangram is improved. git_low is added.
+dd25556 Testing is added. Bug fixed.
+d5ad38b Pangram is created.
+892e2b5 Simple comment
+cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>git log
+commit 283689d52496dce9eb3d1d2fe32f0235a9c88561
+Author: Yuliya Nykytenko <yuliya.nykytenko@gmail.com>
+Date:   Tue Aug 23 20:51:17 2016 +0300
+
+    Pangram is improved. git_low is added.
+
+commit dd25556c057e2dc026ef57174243ca0d23726abd
+Author: Yuliya Nykytenko <yuliya.nykytenko@gmail.com>
+Date:   Tue Aug 23 20:47:29 2016 +0300
+
+    Testing is added. Bug fixed.
+
+commit d5ad38be34ada22acd65e53cc1045e9af1e467cc
+Author: Yuliya Nykytenko <yuliya.nykytenko@gmail.com>
+Date:   Tue Aug 23 20:34:54 2016 +0300
+
+    Pangram is created.
+
+commit 892e2b5fdf4cd65b8ad39e412e53acf9d1fbaac2
+Author: Yuliya Nykytenko <yuliya.nykytenko@gmail.com>
+Date:   Sat Aug 20 13:43:44 2016 +0300
+
+    Simple comment
+
+commit cb3b9e2df9d8e407af69464475f37bfc5fb88ca3
+Author: Yuliya Nykytenko <yuliya.nykytenko@gmail.com>
+Date:   Sat Aug 20 13:13:03 2016 +0300
+
+    First test commit with file anf folder with file
+
+D:\git_train>git commit -a -m "Copyright added."
+[master 6c0c2f6] Copyright added.
+ 1 file changed, 1 insertion(+)
+
+D:\git_train>git log --oneline
+6c0c2f6 Copyright added.
+283689d Pangram is improved. git_low is added.
+dd25556 Testing is added. Bug fixed.
+d5ad38b Pangram is created.
+892e2b5 Simple comment
+cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>git checkout testing
+Switched to branch 'testing'
+
+D:\git_train>git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+D:\git_train>git help merge
+
+D:\git_train>git checkout master
+Switched to branch 'master'
+
+D:\git_train>git merge testing
+Auto-merging Palindrom.py
+Merge made by the 'recursive' strategy.
+ Palindrom.py | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+D:\git_train>git branch
+* master
+  testing
+
+D:\git_train>git log --oneline
+41408cd Merge branch 'testing'
+6c0c2f6 Copyright added.
+747f320 Real pangram.
+3c055e0 Added test on uppercase.
+5754c1e Added full alpha test.
+283689d Pangram is improved. git_low is added.
+dd25556 Testing is added. Bug fixed.
+d5ad38b Pangram is created.
+892e2b5 Simple comment
+cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>git log --oneline --graph
+*   41408cd Merge branch 'testing'
+|\
+| * 747f320 Real pangram.
+| * 3c055e0 Added test on uppercase.
+| * 5754c1e Added full alpha test.
+* | 6c0c2f6 Copyright added.
+|/
+* 283689d Pangram is improved. git_low is added.
+* dd25556 Testing is added. Bug fixed.
+* d5ad38b Pangram is created.
+* 892e2b5 Simple comment
+* cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+D:\git_train>git --oneline --graph
+Unknown option: --oneline
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+D:\git_train>git log --oneline --graph
+*   41408cd Merge branch 'testing'
+|\
+| * 747f320 Real pangram.
+| * 3c055e0 Added test on uppercase.
+| * 5754c1e Added full alpha test.
+* | 6c0c2f6 Copyright added.
+|/
+* 283689d Pangram is improved. git_low is added.
+* dd25556 Testing is added. Bug fixed.
+* d5ad38b Pangram is created.
+* 892e2b5 Simple comment
+* cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>git remote add origin https://github.com/Yuliya-N/Yuliya_Repository
+.git
+
+D:\git_train>git remote
+origin
+
+D:\git_train>git push origin master
+Counting objects: 32, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (29/29), done.
+Writing objects: 100% (32/32), 4.94 KiB | 0 bytes/s, done.
+Total 32 (delta 13), reused 0 (delta 0)
+remote: Resolving deltas: 100% (13/13), done.
+To https://github.com/Yuliya-N/Yuliya_Repository.git
+ * [new branch]      master -> master
+
+D:\git_train>git fetch
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/Yuliya-N/Yuliya_Repository
+   41408cd..52edbe5  master     -> origin/master
+
+D:\git_train>git log --oneline --decorate --all
+52edbe5 (origin/master) New file from server.
+41408cd (HEAD -> master) Merge branch 'testing'
+6c0c2f6 Copyright added.
+747f320 (testing) Real pangram.
+3c055e0 Added test on uppercase.
+5754c1e Added full alpha test.
+283689d Pangram is improved. git_low is added.
+dd25556 Testing is added. Bug fixed.
+d5ad38b Pangram is created.
+892e2b5 Simple comment
+cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>git log --oneline
+41408cd Merge branch 'testing'
+6c0c2f6 Copyright added.
+747f320 Real pangram.
+3c055e0 Added test on uppercase.
+5754c1e Added full alpha test.
+283689d Pangram is improved. git_low is added.
+dd25556 Testing is added. Bug fixed.
+d5ad38b Pangram is created.
+892e2b5 Simple comment
+cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>git merge origin/master
+Updating 41408cd..52edbe5
+Fast-forward
+ New server file.py | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 New server file.py
+
+D:\git_train>dir
+ Volume in drive D is New Volume
+ Volume Serial Number is 5454-A852
+
+ Directory of D:\git_train
+
+08/25/2016  09:08 PM    <DIR>          .
+08/25/2016  09:08 PM    <DIR>          ..
+08/25/2016  07:22 PM            15,726 D.docx
+08/20/2016  01:32 PM                 9 data.txt
+08/20/2016  01:05 PM    <DIR>          folder
+08/23/2016  10:03 PM            17,621 git_log.txt
+08/25/2016  09:08 PM                23 New server file.py
+08/23/2016  09:53 PM               333 Palindrom.py
+               5 File(s)         33,712 bytes
+               3 Dir(s)  24,646,500,352 bytes free
+
+D:\git_train>git log --oneline --decorate --all
+52edbe5 (HEAD -> master, origin/master) New file from server.
+41408cd Merge branch 'testing'
+6c0c2f6 Copyright added.
+747f320 (testing) Real pangram.
+3c055e0 Added test on uppercase.
+5754c1e Added full alpha test.
+283689d Pangram is improved. git_low is added.
+dd25556 Testing is added. Bug fixed.
+d5ad38b Pangram is created.
+892e2b5 Simple comment
+cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>git log --oneline --graph
+* 52edbe5 New file from server.
+*   41408cd Merge branch 'testing'
+|\
+| * 747f320 Real pangram.
+| * 3c055e0 Added test on uppercase.
+| * 5754c1e Added full alpha test.
+* | 6c0c2f6 Copyright added.
+|/
+* 283689d Pangram is improved. git_low is added.
+* dd25556 Testing is added. Bug fixed.
+* d5ad38b Pangram is created.
+* 892e2b5 Simple comment
+* cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>git add D.docx
+
+D:\git_train>git commit -am 'Add file'
+fatal: Paths with -a does not make sense.
+
+D:\git_train>git commit -m 'Add file'
+error: pathspec 'file'' did not match any file(s) known to git.
+
+D:\git_train>git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   D.docx
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   git_log.txt
+
+
+D:\git_train>git commit -m "Add file"
+[master cddd9b8] Add file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 D.docx
+
+D:\git_train>git log --oneline --decorate --all --graph
+* cddd9b8 (HEAD -> master) Add file
+* 52edbe5 (origin/master) New file from server.
+*   41408cd Merge branch 'testing'
+|\
+| * 747f320 (testing) Real pangram.
+| * 3c055e0 Added test on uppercase.
+| * 5754c1e Added full alpha test.
+* | 6c0c2f6 Copyright added.
+|/
+* 283689d Pangram is improved. git_low is added.
+* dd25556 Testing is added. Bug fixed.
+* d5ad38b Pangram is created.
+* 892e2b5 Simple comment
+* cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>git push origin master
+To https://github.com/Yuliya-N/Yuliya_Repository.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/Yuliya-N/Yuliya_Repositor
+y.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+D:\git_train>git fetch
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/Yuliya-N/Yuliya_Repository
+   52edbe5..daec624  master     -> origin/master
+
+D:\git_train>git log --oneline --decorate --all --graph
+* daec624 (origin/master) Update New server file.py
+| * cddd9b8 (HEAD -> master) Add file
+|/
+* 52edbe5 New file from server.
+*   41408cd Merge branch 'testing'
+|\
+| * 747f320 (testing) Real pangram.
+| * 3c055e0 Added test on uppercase.
+| * 5754c1e Added full alpha test.
+* | 6c0c2f6 Copyright added.
+|/
+* 283689d Pangram is improved. git_low is added.
+* dd25556 Testing is added. Bug fixed.
+* d5ad38b Pangram is created.
+* 892e2b5 Simple comment
+* cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>git merge origin/master
+Merge made by the 'recursive' strategy.
+ New server file.py | 1 +
+ 1 file changed, 1 insertion(+)
+
+D:\git_train>git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   git_log.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+D:\git_train>git log --oneline --decorate --all --graph
+*   79fec94 (HEAD -> master) Merge remote-tracking branch 'origin/master'
+|\
+| * daec624 (origin/master) Update New server file.py
+* | cddd9b8 Add file
+|/
+* 52edbe5 New file from server.
+*   41408cd Merge branch 'testing'
+|\
+| * 747f320 (testing) Real pangram.
+| * 3c055e0 Added test on uppercase.
+| * 5754c1e Added full alpha test.
+* | 6c0c2f6 Copyright added.
+|/
+* 283689d Pangram is improved. git_low is added.
+* dd25556 Testing is added. Bug fixed.
+* d5ad38b Pangram is created.
+* 892e2b5 Simple comment
+* cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>git pugh origin master
+git: 'pugh' is not a git command. See 'git --help'.
+
+Did you mean this?
+        push
+
+D:\git_train>git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 13.13 KiB | 0 bytes/s, done.
+Total 5 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local objects.
+To https://github.com/Yuliya-N/Yuliya_Repository.git
+   daec624..79fec94  master -> master
+
+D:\git_train>git diff
+diff --git a/data.txt b/data.txt
+index bddb527..e69de29 100644
+--- a/data.txt
++++ b/data.txt
+@@ -1 +0,0 @@
+-change +1
+\ No newline at end of file
+diff --git a/git_log.txt b/git_log.txt
+index df874dc..306c23d 100644
+--- a/git_log.txt
++++ b/git_log.txt
+@@ -297,4 +297,304 @@ index e69de29..bddb527 100644
+ +change +1
+ \ No newline at end of file
+
++D:\git_train>
++operable program or batch file.
++
++D:\git_train>dir
++ Volume in drive D is New Volume
++ Volume Serial Number is 5454-A852
++
++ Directory of D:\git_train
++
+
+D:\git_train> 
+
