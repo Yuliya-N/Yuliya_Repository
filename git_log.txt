@@ -298,3 +298,302 @@ index e69de29..bddb527 100644
 \ No newline at end of file
 
 D:\git_train>
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\ynykytenko>d:
+
+D:\>cd \git_train
+
+D:\git_train>git branch
+* master
+  testing
+
+D:\git_train>git checkout -b task1
+M       data.txt
+M       git_log.txt
+Switched to a new branch 'task1'
+
+D:\git_train>git log --oneline --graph --all --decorate
+*   79fec94 (HEAD -> task1, origin/master, master) Merge remote-tracking branch
+'origin/master'
+|\
+| * daec624 Update New server file.py
+* | cddd9b8 Add file
+|/
+* 52edbe5 New file from server.
+*   41408cd Merge branch 'testing'
+|\
+| * 747f320 (testing) Real pangram.
+| * 3c055e0 Added test on uppercase.
+| * 5754c1e Added full alpha test.
+* | 6c0c2f6 Copyright added.
+|/
+* 283689d Pangram is improved. git_low is added.
+* dd25556 Testing is added. Bug fixed.
+* d5ad38b Pangram is created.
+* 892e2b5 Simple comment
+* cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>git commit -am "Small change in data.txt"
+[task1 4b2228d] Small change in data.txt
+ 2 files changed, 603 insertions(+), 2 deletions(-)
+
+D:\git_train>git log --oneline --graph --all --decorate
+* 4b2228d (HEAD -> task1) Small change in data.txt
+*   79fec94 (origin/master, master) Merge remote-tracking branch 'origin/master'
+|\
+| * daec624 Update New server file.py
+* | cddd9b8 Add file
+|/
+* 52edbe5 New file from server.
+*   41408cd Merge branch 'testing'
+|\
+| * 747f320 (testing) Real pangram.
+| * 3c055e0 Added test on uppercase.
+| * 5754c1e Added full alpha test.
+* | 6c0c2f6 Copyright added.
+|/
+* 283689d Pangram is improved. git_low is added.
+* dd25556 Testing is added. Bug fixed.
+* d5ad38b Pangram is created.
+* 892e2b5 Simple comment
+* cb3b9e2 First test commit with file anf folder with file
+
+D:\git_train>git checkout master
+Switched to branch 'master'
+
+D:\git_train>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
